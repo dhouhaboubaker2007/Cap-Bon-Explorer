@@ -1,0 +1,119 @@
+:root {
+  --navy: #263746;
+  --teal: #315c70;
+  --pink: #e9b9c8;
+  --pink-dark: #d9799b;
+  --cream: #fffaf6;
+  --soft: #f7edf1;
+  --sage: #d5e5df;
+  --text: #34424d;
+}
+
+
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+a { color: var(--teal); }
+img { max-width: 100%; }
+
+.site-navbar {
+  background: var(--navy);
+}
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+  color: #fff;
+}
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: #ffd8e4;
+}
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  background: white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.banner {
+  background: linear-gradient(110deg, rgba(38,55,70,.83), rgba(49,92,112,.48)),
+              url("../images/cap-bon-coast.webp") center/cover;
+  color: white;
+  border-radius: 1.25rem;
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+.banner h1 { color: white; font-size: clamp(2rem, 5vw, 3.7rem); }
+
+
+.section-space { padding-top: 3rem; padding-bottom: 3rem; }
+.section-heading { margin-bottom: 1.4rem; }
+.soft-panel {
+  background: var(--soft);
+  border: 1px solid #f0d6df;
+  border-radius: 1.1rem;
+  padding: 1.25rem;
+}
+.activity-card {
+  height: 100%;
+  border: 1px solid #eadde1;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 5px 16px rgba(38,55,70,.07);
+}
+.activity-card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+.activity-card .card-body { padding: 1rem; }
+.btn-pink {
+  background: var(--pink-dark);
+  border-color: var(--pink-dark);
+  color: white;
+}
+.page-title {
+  background: var(--soft);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--pink-dark);
+  box-shadow: 0 0 0 .2rem rgba(217,121,155,.18);
+}
+.site-footer {
+  background: var(--navy);
+  color: white;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+}
+.site-footer a { color: #ffd8e4; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.result-box {
+  background: #fbe3eb;
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+.contact-icon { color: var(--pink-dark); font-weight: bold; margin-right: .4rem; }
+@media (max-width: 575.98px) {
+  .hero { min-height: 280px; }
+  .section-space { padding-top: 2rem; padding-bottom: 2rem; }
+  .activity-card img { height: 190px; }
+}
